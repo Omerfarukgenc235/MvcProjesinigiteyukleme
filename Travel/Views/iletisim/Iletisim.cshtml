@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Iletisim";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<div class="contact">
+    <div class="wrap">
+        <div class="contact-top">
+            <h3>Bize Ulaşın</h3>
+        </div>
+        <div class="form">
+            <form method="post">
+                <input type="hidden" placeholder="ID" name="ID" value="@ViewBag.deger" required />
+                <input type="text" class="textbox" name="AdSoyad" value="Adınız ve Soyadınız:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+
+                <input type="text" class="textbox" name="Mail" value="E-mail:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+
+                <input type="text" class="textbox" name="Konu" value="Konu:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}">
+
+                <div class="form1">
+
+                    <textarea value="Message:" name="Mesaj" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Mesaj:</textarea>
+                </div>
+
+                <input type="submit" style="background-color:aqua" value="Gönder">
+            </form>
+        </div>
+        <div class="clear"></div>
+        <div class="clear"></div>
+    </div>
+</div>
+<br />
+<br />
+<br />
